@@ -7,5 +7,6 @@ public class UserEvaluateBean {
 	private String aaab;
 	private String aaabb;
 	private String aaabbb;
+	private String aaabbbb;
 	
 }

@@ -2,6 +2,12 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="LocationMapper">
+	<select id="get_locationinfo_list" resultType='co.soft.beans.LocationInfoBean'>
+		<![CDATA[
+			select * from locationinfo
+		]]>
+	</select>
+	
 	<!-- 
 	<insert parameterType="co.soft.beans.LocationInfoBean" id="in">
 		<![CDATA[

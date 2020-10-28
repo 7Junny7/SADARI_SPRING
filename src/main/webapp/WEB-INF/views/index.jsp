@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core"%>
+<c:set var='root' value="${pageContext.request.contextPath }/" />
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,8 +11,9 @@
 <script type="text/javascript"
 	src="//dapi.kakao.com/v2/maps/sdk.js?appkey=fa75c9503662359585ac536ec9b0f6e5"></script>
 <body>
-	<a href="input">input</a>
-	<a href="result">result</a>
+	<!-- 메뉴 인터셉터 -->
+	<c:import url="/WEB-INF/views/include/top_menu.jsp" />
+
 	<div id="map" style="width: 500px; height: 400px;"></div>
 
 </body>
@@ -23,7 +26,5 @@
 	};
 
 	var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
-	
-	
 </script>
 </html>

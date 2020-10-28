@@ -4,7 +4,7 @@
 <mapper namespace="topmenu">
 	<select id="get_topmenu_list" resultType='co.soft.beans.MenuInfoBean'>
 		<![CDATA[
-			select board_info_idx, board_info_name from board_info_table order by board_info_idx
+			select menu_info_idx, menu_info_name from menu_info_table order by menu_info_idx
 		]]>
 	</select>
 </mapper>

@@ -20,9 +20,9 @@ public class TopMenuInterceptor implements HandlerInterceptor{
 	@Autowired
 	private TopMenuService topMenuService;
 	
-	@Resource(name = "loginUserBean")
-	@Lazy
-	private UserInfoBean loginUserBean;
+//	@Resource(name = "loginUserBean")
+//	@Lazy
+//	private UserInfoBean loginUserBean;
 	
 	
 	@Override
@@ -31,7 +31,7 @@ public class TopMenuInterceptor implements HandlerInterceptor{
 		// TODO Auto-generated method stub
 		List<MenuInfoBean> topMenuList = topMenuService.getTopMenuList();
 		request.setAttribute("topMenuList", topMenuList);
-		request.setAttribute("loginUserBean", loginUserBean);
+//		request.setAttribute("loginUserBean", loginUserBean);
 		
 		return true;
 	}

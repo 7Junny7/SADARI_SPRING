@@ -33,8 +33,6 @@ public class MainController {
 //		
 //		model.addAttribute("list", list);
 		
-		List<MenuInfoBean> board_list = topMenuService.getTopMenuList();
-		model.addAttribute("board_list", board_list);
 		
 		return "index";
 	}

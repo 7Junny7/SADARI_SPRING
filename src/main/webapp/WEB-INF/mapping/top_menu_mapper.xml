@@ -7,24 +7,4 @@
 			select menu_info_idx, menu_info_name from menu_info_table order by menu_info_idx
 		]]>
 	</select>
-	<select id="get_topmenu_list_1" resultType='co.soft.beans.MenuInfoBean'>
-		<![CDATA[
-			select menu_info_idx, menu_info_name from menu_info_table where menu_info_idx like '1_' order by menu_info_idx;
-		]]>
-	</select>
-	<select id="get_topmenu_list_2" resultType='co.soft.beans.MenuInfoBean'>
-		<![CDATA[
-			select menu_info_idx, menu_info_name from menu_info_table where menu_info_idx like '2_' order by menu_info_idx;
-		]]>
-	</select>
-	<select id="get_topmenu_list_3" resultType='co.soft.beans.MenuInfoBean'>
-		<![CDATA[
-			select menu_info_idx, menu_info_name from menu_info_table where menu_info_idx like '3_' order by menu_info_idx;
-		]]>
-	</select>
-	<select id="get_topmenu_list_6" resultType='co.soft.beans.MenuInfoBean'>
-		<![CDATA[
-			select menu_info_idx, menu_info_name from menu_info_table where menu_info_idx like '6_' order by menu_info_idx;
-		]]>
-	</select>
 </mapper>

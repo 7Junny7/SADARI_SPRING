@@ -4,6 +4,9 @@ import java.util.List;
 
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Repository;
 
 import co.soft.beans.MenuInfoBean;
@@ -18,4 +21,5 @@ public class TopMenuDao {
 		List<MenuInfoBean> topMenuList = sqlSessionTemplate.selectList("topmenu.get_topmenu_list");
 		return topMenuList;
 	}
+	
 }

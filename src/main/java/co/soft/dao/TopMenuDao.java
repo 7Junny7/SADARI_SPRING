@@ -1,13 +1,14 @@
 package co.soft.dao;
 
 import java.awt.Menu;
+
 import java.util.List;
 
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import co.soft.beans.BoardInfoBean;
+import co.soft.beans.MenuInfoBean;
 
 @Repository
 public class TopMenuDao {

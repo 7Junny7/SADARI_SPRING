@@ -2,12 +2,18 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="UserMapper">
-	<!--  
-	<insert parameterType="co.soft.beans.UserInfoBean" id="in">
+	<select id="get_userinfo_list" resultType='co.soft.beans.UserInfoBean'>
 		<![CDATA[
-			insert into spring(s1,s2,s3) values(#{s1},#{s2},#{s3})
+			select username, usernickname, userbirth, userid, userpassward, usergender, useremail, userphone, usertemp, howmanyuser, favorite, usercomment from userinfo
 		]]>
-	</insert>
+	</select>
+	<!--  
+		<insert parameterType="co.soft.beans.UserInfoBean" id="in">
+			<![CDATA[
+				insert into spring(s1,s2,s3) values(#{s1},#{s2},#{s3})
+			]]>
+		</insert>
+
 	<select id="sel" resultType="co.soft.beans.Data1">
 		<![CDATA[
 			select s1,s2,s3 from spring

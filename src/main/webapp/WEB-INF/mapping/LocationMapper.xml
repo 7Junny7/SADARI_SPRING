@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="LocationMapper">
+	<insert parameterType="co.soft.beans.LocationInfo" id="in">
+		<![CDATA[
+			insert into spring(s1,s2,s3) values(#{s1},#{s2},#{s3})
+		]]>
+	</insert>
+	<select id="sel" resultType="co.soft.beans.Data1">
+		<![CDATA[
+			select s1,s2,s3 from spring
+		]]>
+	</select>
+</mapper>

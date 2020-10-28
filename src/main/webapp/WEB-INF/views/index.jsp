@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +11,7 @@
 	<!-- 메뉴 인터셉터 -->
 	
 <c:import url="/WEB-INF/views/include/top_menu.jsp" />
+
 	<p style="margin-top: -12px"></p>
 	<div id="map" style="width: 50%; height: 250px;"></div>
 	<script type="text/javascript"

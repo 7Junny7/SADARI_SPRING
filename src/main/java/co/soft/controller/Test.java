@@ -18,6 +18,8 @@ public class Test {
 	@Autowired
 	SqlSessionTemplate s;
 	
+	
+	
 	@GetMapping("/index")
 	public String index() {
 		return "index";

@@ -1,6 +1,6 @@
 package co.soft.beans;
 
-public class UserInfo {
+public class UserInfoBean {
 
 	//유저 정보, 로그인 및 회원가입 용, 회원정보 및 평가 용
 	private String id;

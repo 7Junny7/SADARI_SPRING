@@ -4,7 +4,7 @@ import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
 import co.soft.beans.UserBean;
-import co.soft.beans.UserInfo;
+import co.soft.beans.UserInfoBean;
 
 public class UserValidator implements Validator{
 

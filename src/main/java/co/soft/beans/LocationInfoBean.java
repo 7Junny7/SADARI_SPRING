@@ -1,6 +1,6 @@
 package co.soft.beans;
 
-public class LocationInfo {
+public class LocationInfoBean {
 
 	//음식점 정보
 	private String name; // 음식점 명

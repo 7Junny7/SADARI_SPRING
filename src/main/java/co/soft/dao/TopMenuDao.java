@@ -1,5 +1,6 @@
 package co.soft.dao;
 
+import java.awt.Menu;
 import java.util.List;
 
 import org.mybatis.spring.SqlSessionTemplate;
@@ -14,8 +15,8 @@ public class TopMenuDao {
 	@Autowired
 	private SqlSessionTemplate sqlSessionTemplate;
 	
-	public List<BoardInfoBean> getTopMenuList(){
-		List<BoardInfoBean> topMenuList = sqlSessionTemplate.selectList("topmenu.get_topmenu_list");
+	public List<MenuInfoBean> getTopMenuList(){
+		List<MenuInfoBean> topMenuList = sqlSessionTemplate.selectList("topmenu.get_topmenu_list");
 		return topMenuList;
 	}
 }

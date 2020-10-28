@@ -4,19 +4,20 @@ import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
 import co.soft.beans.UserBean;
+import co.soft.beans.UserInfo;
 
 public class UserValidator implements Validator{
 
 	@Override
 	public boolean supports(Class<?> clazz) {
 		// TODO Auto-generated method stub
-		return UserBean.class.isAssignableFrom(clazz);
+		return UserInfoBean.class.isAssignableFrom(clazz);
 	}
 
 	@Override
 	public void validate(Object target, Errors errors) {
 		// TODO Auto-generated method stub
-		UserBean userBean = (UserBean)target;
+		UserInfoBean userBean = (UserInfoBean)target;
 		
 		String beanName = errors.getObjectName();
 		

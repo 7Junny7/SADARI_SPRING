@@ -3,7 +3,7 @@ package co.soft.beans;
 public class LocationInfoBean {
 
 	//음식점 정보
-	private String restorant; // 음식점 명
+	private String restaurant; // 음식점 명
 	private String location; // 위치
 	private String foodType; // 음식종류
 	private int foodLikeScore; // 좋아요 점수

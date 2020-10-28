@@ -10,6 +10,7 @@ public class MenuInfoBean {
 	//5.양식 - 51.파스타/피자 (서브메뉴 없음,필요?)
 	//6.패스트푸드 - 61.피자, 62.치킨, 63.햄버거
 	//7.기타
+	//8.asdfasdf
 	
 	private int menu_info_idx;
 	private String menu_info_name;

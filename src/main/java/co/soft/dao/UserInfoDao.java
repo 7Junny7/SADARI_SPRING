@@ -12,8 +12,8 @@ public class UserInfoDao {
 	@Autowired
 	private SqlSessionTemplate sqlSessionTemplate;
 	
-	public String checkUserIdExist(String user_id) {
-		return sqlSessionTemplate.selectOne("user.checkUserIdExist", user_id);
+	public String checkUserIdExist(String userId) {
+		return sqlSessionTemplate.selectOne("user.checkUserIdExist", userId);
 	}
 	
 	public void addUserInfo(UserInfoBean joinUserBean) {
@@ -24,8 +24,8 @@ public class UserInfoDao {
 		return sqlSessionTemplate.selectOne("user.getLoginUserInfo", tempLoginUserBean);
 	}
 	
-	public UserInfoBean getModifyUserInfo(int user_idx) {
-		return sqlSessionTemplate.selectOne("user.getModifyUserInfo", user_idx);
+	public UserInfoBean getModifyUserInfo(int useridx) {
+		return sqlSessionTemplate.selectOne("user.getModifyUserInfo", useridx);
 	}
 	
 	public void modifyUserInfo(UserInfoBean modifyUserBean) {

@@ -4,7 +4,7 @@
 <mapper namespace="UserMapper">
 	<select id="get_userinfo_list" resultType='co.soft.beans.UserInfoBean'>
 		<![CDATA[
-			select username, usernickname, userbirth, userid, userpassward, usergender, useremail, userphone, usertemp, howmanyuser, favorite, usercomment from userinfo
+			select * from userinfo
 		]]>
 	</select>
 	<!--  

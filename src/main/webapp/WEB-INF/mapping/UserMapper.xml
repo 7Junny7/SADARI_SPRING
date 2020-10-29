@@ -1,12 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="UserMapper">
-	<select id="get_userinfo_list" resultType='co.soft.beans.UserInfoBean'>
+<mapper namespace="user">
+	<select id="checkUserIdExist" parameterType="java.lang.String" resultType="java.lang.String">
+		<![CDATA[
+			select username
+			from userinfo
+			where userid = #{userid}
+		]]>
+	</select>
+	
+	<insert id="addUserInfo" parameterType="co.soft.beans.UserInfoBean">
+		<![CDATA[
+			insert into user_table (user_idx, user_name, user_id, user_pw)
+			values (user_seq.nextval, #{user_name}, #{user_id}, #{user_pw})
+		]]>
+	</insert>
+	
+	<select id="getLoginUserInfo" parameterType="co.soft.beans.UserInfoBean" resultType="co.soft.beans.UserInfoBean">
+		<![CDATA[
+			select user_idx, user_name
+			from user_table 
+			where user_id=#{user_id} and user_pw=#{user_pw}
+		]]>
+	</select>
+	
+	<select id="getModifyUserInfo" parameterType="java.lang.Integer" resultType="co.soft.beans.UserInfoBean">
+		<![CDATA[
+			select user_id, user_name
+			from user_table
+			where user_idx = #{user_idx}
+		]]>
+	</select>
+	
+	<update id="modifyUserInfo" parameterType="co.soft.beans.UserInfoBean">
+		<![CDATA[
+			update user_table
+			set userpassward = #{userpassward}
+			where user_idx = #{user_idx}
+		]]>
+	</update>
+
+	<!-- <select id="get_userinfo_list" resultType='co.soft.beans.UserInfoBean'>
 		<![CDATA[
 			select * from userinfo
 		]]>
-	</select>
+	</select> -->
 	<!--  
 		<insert parameterType="co.soft.beans.UserInfoBean" id="in">
 			<![CDATA[
@@ -14,9 +53,9 @@
 			]]>
 		</insert>
 
+			select s1,s2
 	<select id="sel" resultType="co.soft.beans.Data1">
-		<![CDATA[
-			select s1,s2,s3 from spring
+		<![CDATA[,s3 from spring
 		]]>
 	</select>
 	-->

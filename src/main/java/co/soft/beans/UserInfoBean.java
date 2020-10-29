@@ -17,7 +17,7 @@ public class UserInfoBean {
 	@Pattern(regexp = "[가-힣a-Z]*")
 	private String userNickName; //닉네임
 	
-	@Size(min=2, max=10) 
+	@Size(min=6, max=6) 
 	@Pattern(regexp = "[0-9]*")
 	private int userBirth;	//생년월일
 	

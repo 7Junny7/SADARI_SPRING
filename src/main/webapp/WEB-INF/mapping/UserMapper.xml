@@ -19,25 +19,25 @@
 	
 	<select id="getLoginUserInfo" parameterType="co.soft.beans.UserInfoBean" resultType="co.soft.beans.UserInfoBean">
 		<![CDATA[
-			select user_idx, user_name
-			from user_table 
-			where user_id=#{user_id} and user_pw=#{user_pw}
+			select useridx, username
+			from userinfo 
+			where userid=#{userid} and userpassward=#{userpassward}
 		]]>
 	</select>
 	
 	<select id="getModifyUserInfo" parameterType="java.lang.Integer" resultType="co.soft.beans.UserInfoBean">
 		<![CDATA[
-			select user_id, user_name
-			from user_table
-			where user_idx = #{user_idx}
+			select userid, username
+			from userinfo
+			where useridx = #{useridx}
 		]]>
 	</select>
 	
 	<update id="modifyUserInfo" parameterType="co.soft.beans.UserInfoBean">
 		<![CDATA[
-			update user_table
+			update userinfo
 			set userpassward = #{userpassward}
-			where user_idx = #{user_idx}
+			where useridx = #{useridx}
 		]]>
 	</update>
 

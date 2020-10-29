@@ -12,8 +12,8 @@
 	
 	<insert id="addUserInfo" parameterType="co.soft.beans.UserInfoBean">
 		<![CDATA[
-			insert into user_table (user_idx, user_name, user_id, user_pw)
-			values (user_seq.nextval, #{user_name}, #{user_id}, #{user_pw})
+			insert into userinfo (useridx, username, userid, userpassward)
+			values (user_seq.nextval, #{username}, #{userid}, #{userpwassward})
 		]]>
 	</insert>
 	

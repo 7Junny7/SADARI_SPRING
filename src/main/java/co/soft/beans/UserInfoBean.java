@@ -5,57 +5,57 @@ import javax.validation.constraints.Size;
 
 public class UserInfoBean {
 	
-	private int user_idx;
+	private int useridx;
 	private boolean userIdExist;
 	private boolean userLogin;
 	
 	@Size(min=2, max=4) 
 	@Pattern(regexp = "[가-힣]*")
-	private String userName;	//�씠由�
+	private String userName;	//이름
 	
 	@Size(min=2, max=10) 
 	@Pattern(regexp = "[가-힣a-Z]*")
-	private String userNickName; //蹂꾨챸
+	private String userNickName; //닉네임
 	
 	@Size(min=2, max=10) 
 	@Pattern(regexp = "[0-9]*")
-	private int userBirth;	//�깮�뀈�썡�씪
+	private int userBirth;	//생년월일
 	
 	@Size(min=4, max=20)
 	@Pattern(regexp = "[a-zA-Z0-9]*")
-	private String userId;	//�븘�씠�뵒
+	private String userId;	//아이디
 	
 	@Size(min=4, max=20)
 	@Pattern(regexp = "[a-zA-Z0-9]*")
-	private String userPassword; //鍮꾨�踰덊샇ㅇ
+	private String userPassword; //비밀번호
 	
 	@Size(min=0, max=5)
 	@Pattern(regexp = "[가-힣]*")
-	private String userGender; //�꽦蹂�d
+	private String userGender; //성별
 	
 	@Size(min=4, max=30)
 	@Pattern(regexp = "[a-zA-Z0-9]*")
-	private String userEmail; //�씠硫붿씪
+	private String userEmail; //이메일
 	
 	@Size(min=1, max=12)
 	@Pattern(regexp = "[0-9]*")
-	private int userPhone; // �쟾�솕踰덊샇
+	private int userPhone; //전화번호
 	
 	@Size(min=1, max=12)
 	@Pattern(regexp = "[0-9]*")
-	private int userTemp; // �삩�룄
+	private int userTemp; // 온도
 	
 	@Size(min=1, max=12)
 	@Pattern(regexp = "[0-9]*")
-	private int howManyuser; //�닾�몴 �씤�썝�닔  -> �몢媛� 議고빀�쑝濡� 醫뗭븘�슂 rate(蹂꾩젏) 怨꾩궛
+	private int howManyuser; //평가한사람수
 	
 	@Size(min=0, max=5)
 	@Pattern(regexp = "[가-힣]*")
-	private String favorite; //�꽑�샇 �쓬�떇
+	private String favorite; //좋아하는음식
 	
 	@Size(min=0, max=5)
 	@Pattern(regexp = "[가-힣]*")
-	private String userComment; //蹂몄씤 �룊媛�
+	private String userComment; //한줄평
 
 	
 	public UserInfoBean() {
@@ -63,12 +63,12 @@ public class UserInfoBean {
 		this.userLogin = false;
 	}
 
-	public int getUser_idx() {
-		return user_idx;
+	public int getUseridx() {
+		return useridx;
 	}
 
-	public void setUser_idx(int user_idx) {
-		this.user_idx = user_idx;
+	public void setUseridx(int user_idx) {
+		this.useridx = user_idx;
 	}
 
 	public boolean isUserIdExist() {

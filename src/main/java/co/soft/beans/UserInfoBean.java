@@ -27,7 +27,7 @@ public class UserInfoBean {
 	
 	@Size(min=4, max=20)
 	@Pattern(regexp = "[a-zA-Z0-9]*")
-	private String userPassword; //鍮꾨�踰덊샇
+	private String userPassword; //鍮꾨�踰덊샇ㅇ
 	
 	@Size(min=0, max=5)
 	@Pattern(regexp = "[가-힣]*")

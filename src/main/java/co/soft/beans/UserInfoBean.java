@@ -31,7 +31,7 @@ public class UserInfoBean {
 	
 	@Size(min=0, max=5)
 	@Pattern(regexp = "[가-힣]*")
-	private String userGender; //�꽦蹂�
+	private String userGender; //�꽦蹂�d
 	
 	@Size(min=4, max=30)
 	@Pattern(regexp = "[a-zA-Z0-9]*")
